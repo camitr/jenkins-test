@@ -73,8 +73,7 @@ pipeline {
 		         	 sh "sed -i 's/unix/linux/g' ./chart/file.txt"
 				 sh "git remote -v"
 				 sh "git config --global user.name \"jenkins\" && git config --global user.email jenkins@frbi.dev"
-			sh "git remote set-url origin https://camitr@github.com/camitr/jenkins-test.git"
-"
+				sh "git remote set-url origin https://camitr@github.com/camitr/jenkins-test.git"
 			         sh "git commit -am \"JENKINS:Auto-commit\" && git branch && git push origin main "
 			//https://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@github.com/camitr/jenkins-test"
 			    // }
